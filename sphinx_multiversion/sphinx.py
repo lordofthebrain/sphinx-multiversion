@@ -148,7 +148,7 @@ def html_page_context(app, pagename, templatename, context, doctree):
     context["vpathto"] = versioninfo.vpathto
 
     context["current_version"] = versioninfo[app.config.smv_current_version]
-    context["latest_version"] = versioninfo[app.config.smv_latest_version]
+    context["latest_version"] = versioninfo[-1]
     context["html_theme"] = app.config.html_theme
 
 
